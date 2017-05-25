@@ -303,6 +303,7 @@ public class Floor extends JPanel implements ActionListener, ItemListener {
 		else{	b2.setEnabled(false);
 		f.dispose();}
 		
+		
 	}
 
 	}
