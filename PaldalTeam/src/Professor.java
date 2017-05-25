@@ -56,7 +56,7 @@ public class Professor extends People{
 				}
 			
 	}
-	public static void main(String[] args) {
+/*	public static void main(String[] args) {
 		Professor p= new Professor();
 		
 		int[] a=new int[1000];
@@ -64,5 +64,5 @@ public class Professor extends People{
 		System.out.println(a[0]);
 		
 	}
-	
+	*/
 }
