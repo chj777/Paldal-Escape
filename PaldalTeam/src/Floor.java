@@ -304,6 +304,7 @@ public class Floor extends JPanel implements ActionListener, ItemListener {
 		f.dispose();}
 		
 		
+		
 	}
 
 	}
