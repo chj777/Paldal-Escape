@@ -54,6 +54,7 @@ public class login implements ActionListener {
 		f.getContentPane().add(p);
 		f.setSize(938, 100);
 		f.setVisible(true);
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 
 	public void go2() {
@@ -82,43 +83,65 @@ public class login implements ActionListener {
 		s2 = this.mother.getPW();
 		// System.out.println(s1.get(1));
 
-		if (arg0.getSource().equals(b1)) {
-			int i = 0;
-			int n = 0;
-			while (n < s1.size()) {
-
-				if (t1.getText().trim().equals(s1.get(i)) && t2.getText().trim().equals(s2.get(i))) {
-					// b1.setText("LOGOUT");
-
-					mainhome = new MainHome();
-					mainhome.go();
-					// new Character(this);
-					break;
-
-				}
-				i++;
-				n++;
+		if (arg0.getSource().equals(b1)) 
+		{
+			UserInformation newuser = new UserInformation(this.t1.getText(),this.t2.getText());
+			UserManagement UM = new UserManagement();
+			if(UM.login_user(newuser))
+			{
+				UserInformation currentUser = UM.getCurrentLoginUser();
+				mainhome = new MainHome(currentUser);
+				mainhome.go();
 			}
+			else
+			{
+				JOptionPane.showMessageDialog(null, "Æ²·È¾î ÀÓ¸¶.");
+			}
+//			int i = 0;
+//			int n = 0;
+//			while (n < s1.size()) {
+//
+//				if (t1.getText().trim().equals(s1.get(i)) && t2.getText().trim().equals(s2.get(i))) {
+//					// b1.setText("LOGOUT");
+//
+//					mainhome = new MainHome();
+//					mainhome.go();
+//					// new Character(this);
+//					break;
+//
+//				}
+//				i++;
+//				n++;
+//			}
 
 		} else if (arg0.getSource().equals(b2)) {
-			int n2 = 0;
-			int n3 = 0;
-			int n4 = 0;
-			while (n4 < s1.size()) {
-				if (!(t1.getText().trim().equals(s1.get(n2)))) {
-					n3++;
-				}
-				n2++;
-				n4++;
-
+			if(this.t1.getText().length() != 0 && this.t2.getText().length() != 0)
+			{
+				
+				UserInformation newuser = new UserInformation(this.t1.getText(),this.t2.getText());
+				UserManagement manage = new UserManagement();
+				manage.newuser_adding(newuser);
+				this.t1.setText("");
+				this.t2.setText("");
 			}
-			System.out.println(s1.size());
-			if (n3 >= s1.size()) {
-				new Register(this);
-
-			} else if (n3 < s1.size()) {
-				JOptionPane.showMessageDialog(null, "Alreadt exist ID", "", JOptionPane.INFORMATION_MESSAGE);
-			}
+//			int n2 = 0;
+//			int n3 = 0;
+//			int n4 = 0;
+//			while (n4 < s1.size()) {
+//				if (!(t1.getText().trim().equals(s1.get(n2)))) {
+//					n3++;
+//				}
+//				n2++;
+//				n4++;
+//
+//			}
+//			System.out.println(s1.size());
+//			if (n3 >= s1.size()) {
+//				new Register(this);
+//
+//			} else if (n3 < s1.size()) {
+//				JOptionPane.showMessageDialog(null, "Alreadt exist ID", "", JOptionPane.INFORMATION_MESSAGE);
+//			}
 
 		}
 
@@ -129,7 +152,7 @@ public class login implements ActionListener {
 				this.t2.setText("");
 				mainhome.f.setVisible(false);
 				mainhome.f.dispose();
-				mainhome = null;
+				mainhome = null;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
 			}
 		}
 
