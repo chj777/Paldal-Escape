@@ -59,12 +59,7 @@ public class MainHome implements ActionListener {
 		this.b[i1].setEnabled(key);//number
 	}
 	
-	public static void main(String[] args) {
-
-		new MainHome().go();
-
-	}
-
+	
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		
@@ -107,11 +102,14 @@ public class MainHome implements ActionListener {
 			 new Floor(a[24],a[25],a[26],"concept.txt", "p1.txt", "p2.txt", "p3.txt",this);
 		}
 		if (e.getSource().equals(b[9])) {
-			//i1=10;
+			
 			 new Floor(a[27],a[28],a[29],"concept.txt", "p1.txt", "p2.txt", "p3.txt",this);
 		}
 		
 
+	}
+	public static void main(String[] args) {
+		new MainHome().go();
 	}
 
 }
