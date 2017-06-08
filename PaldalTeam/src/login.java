@@ -93,7 +93,7 @@ public class login implements ActionListener {
 			}
 			else
 			{
-				JOptionPane.showMessageDialog(null, "틀렸어 임마.");
+				JOptionPane.showMessageDialog(null, "Wrong! Again Input ID and PW");
 			}
 
 
