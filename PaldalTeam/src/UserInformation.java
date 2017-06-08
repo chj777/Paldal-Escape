@@ -14,6 +14,7 @@ public class UserInformation implements Serializable
 	public void setStage(int stage) {
 		this.stage = stage;
 	}
+	
 
 	public UserInformation(String UserID_input, String UserPW_input)
 	{

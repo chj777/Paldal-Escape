@@ -101,6 +101,7 @@ public class login implements ActionListener {
 			if(this.t1.getText().length() != 0 && this.t2.getText().length() != 0)
 			{
 				
+				
 				UserInformation newuser = new UserInformation(this.t1.getText(),this.t2.getText());
 				UserManagement manage = new UserManagement();
 				manage.newuser_adding(newuser);
