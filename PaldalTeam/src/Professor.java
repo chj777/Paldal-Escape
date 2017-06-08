@@ -31,6 +31,7 @@ public class Professor extends People{
 		
 	}
 	
+	
 	@Override
 	public String give(String fileName){
 		String s="";
@@ -54,5 +55,7 @@ public class Professor extends People{
 				}
 			
 	}
+	
+	//public void edit
 
 }

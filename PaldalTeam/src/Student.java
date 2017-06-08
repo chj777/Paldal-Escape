@@ -39,6 +39,7 @@ public class Student extends People{
 		return name;
 	}
 
+	
 	public void setName(ArrayList<String> name) {
 		this.name = name;
 	}

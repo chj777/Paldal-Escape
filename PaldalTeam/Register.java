@@ -6,6 +6,7 @@ public class Register {
 
 	public Register(login lg_input){
 		
+		
 	this.lg=lg_input;
 		
 	

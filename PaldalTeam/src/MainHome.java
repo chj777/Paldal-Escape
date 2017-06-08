@@ -25,18 +25,18 @@ public class MainHome implements ActionListener {
 
 		Professor pro = new Professor();
 
-		a = pro.store_ans("a.txt");
+		a = pro.store_ans("answer.txt");///////////////////////////////////////////////////
 
-		b[0] = new JButton(1 + "");
-		b[1] = new JButton(2 + "");
-		b[2] = new JButton(3 + "");
-		b[3] = new JButton(4 + "");
-		b[4] = new JButton(5 + "");
-		b[5] = new JButton(6 + "");
-		b[6] = new JButton(7 + "");
-		b[7] = new JButton(8 + "");
-		b[8] = new JButton(9 + "");
-		b[9] = new JButton(10 + "");
+		b[0] = new JButton(10 + "");
+		b[1] = new JButton(9 + "");
+		b[2] = new JButton(8 + "");
+		b[3] = new JButton(7 + "");
+		b[4] = new JButton(6 + "");
+		b[5] = new JButton(5 + "");
+		b[6] = new JButton(4 + "");
+		b[7] = new JButton(3 + "");
+		b[8] = new JButton(2 + "");
+		b[9] = new JButton(1 + "");
 
 
 
@@ -68,7 +68,7 @@ public class MainHome implements ActionListener {
 	}
 
 	public void change_button_enable(int number, boolean key) {
-		this.b[i1].setEnabled(key); // number
+		this.b[i1].setEnabled(key); 
 		int user_index = new UserManagement().get_user_index(this.user);
 		this.user.setStage(i1);
 		new UserManagement().update_user(this.user, user_index);
@@ -80,44 +80,45 @@ public class MainHome implements ActionListener {
 
 		if (e.getSource().equals(b[0])) {
 			i1 = 1;
-			new Floor(a[0], a[1], a[2], "concept.txt", "p1.txt", "p2.txt", "p3.txt", this);
+			new Floor(a[0], a[1], a[2], "10.txt", "10-1.txt", "10-2.txt", "10-3.txt", this);
 		}
 
 		if (e.getSource().equals(b[1])) {
 			i1 = 2;
-			new Floor(a[3], a[4], a[5], "concept.txt", "p1.txt", "p2.txt", "p3.txt", this);
+			new Floor(a[3], a[4], a[5], "9.txt", "9-1.txt", "9-2.txt", "9-3.txt", this);
 		}
 		if (e.getSource().equals(b[2])) {
 			i1 = 3;
-			new Floor(a[6], a[7], a[8], "concept.txt", "p1.txt", "p2.txt", "p3.txt", this);
+			new Floor(a[6], a[7], a[8], "8.txt", "8-1.txt", "8-2.txt", "8-3.txt", this);
 		}
 		if (e.getSource().equals(b[3])) {
 			i1 = 4;
-			new Floor(a[9], a[10], a[11], "concept.txt", "p1.txt", "p2.txt", "p3.txt", this);
+			new Floor(a[9], a[10], a[11], "7.txt", "7-1.txt", "7-2.txt", "7-3.txt", this);
 		}
 		if (e.getSource().equals(b[4])) {
 			i1 = 5;
-			new Floor(a[12], a[13], a[14], "concept.txt", "p1.txt", "p2.txt", "p3.txt", this);
+			new Floor(a[12], a[13], a[14], "6.txt", "6-1.txt", "6-2.txt", "6-3.txt", this);
 		}
+	
 		if (e.getSource().equals(b[5])) {
 			i1 = 6;
-			new Floor(a[15], a[16], a[17], "concept.txt", "p1.txt", "p2.txt", "p3.txt", this);
+			new Floor(a[15], a[16], a[17], "5.txt", "5-1.txt", "5-2.txt", "5-3.txt", this);
 		}
 		if (e.getSource().equals(b[6])) {
 			i1 = 7;
-			new Floor(a[18], a[19], a[20], "concept.txt", "p1.txt", "p2.txt", "p3.txt", this);
+			new Floor(a[18], a[19], a[20], "4.txt", "4-1.txt", "4-2.txt", "4-3.txt", this);
 		}
 		if (e.getSource().equals(b[7])) {
 			i1 = 8;
-			new Floor(a[21], a[22], a[23], "concept.txt", "p1.txt", "p2.txt", "p3.txt", this);
+			new Floor(a[21], a[22], a[23], "3.txt", "3-1.txt", "3-2.txt", "3-3.txt", this);
 		}
 		if (e.getSource().equals(b[8])) {
 			i1 = 9;
-			new Floor(a[24], a[25], a[26], "concept.txt", "p1.txt", "p2.txt", "p3.txt", this);
+			new Floor(a[24], a[25], a[26], "2.txt", "2-1.txt", "2-2.txt", "2-3.txt", this);
 		}
 		if (e.getSource().equals(b[9])) {
 
-			new Floor(a[27], a[28], a[29], "concept.txt", "p1.txt", "p2.txt", "p3.txt", this);
+			new Floor(a[27], a[28], a[29], "1.txt", "1-1.txt", "1-2.txt", "1-3.txt", this);
 		}
 
 	}

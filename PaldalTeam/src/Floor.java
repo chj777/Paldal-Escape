@@ -30,6 +30,7 @@ public class Floor extends JPanel implements ActionListener, ItemListener {
 		
 		c=new JCheckBox[12];
 		
+		
 		f = new JFrame();
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		f.setTitle(i + "");
@@ -71,14 +72,24 @@ public class Floor extends JPanel implements ActionListener, ItemListener {
 		
 		cardPanel = new JPanel();
 		cardPanel.setLayout(new CardLayout());
-
+////////////////////////////////////////////////////////////////////////////////////////////
 		l1 = new JTextArea(new Professor().give(con));
+		l1.setSize(500, 500);
+	
+		JScrollPane sc1=new JScrollPane();
+		sc1.setViewportView(l1);
+		sc1.setVerticalScrollBarPolicy( ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+		sc1.setSize(500, 500);
+		
 		l2 = new JTextArea(new Professor().give(p1));
 		l3 = new JTextArea(new Professor().give(p2));
 		l4 = new JTextArea(new Professor().give(p3));
 
+		
 		jp1 = new JPanel();
-		jp1.add(l1);
+		jp1.setLayout(new BorderLayout(0, 0));
+		jp1.add(sc1,BorderLayout.CENTER);
+		
 		jp2 = new JPanel();
 		jp2.add(l2);
 		jp3 = new JPanel();
@@ -97,13 +108,13 @@ public class Floor extends JPanel implements ActionListener, ItemListener {
 		cardPanel.add(jp3);
 		cardPanel.add(jp4);
 		
-		b2 = new JButton("2");
+		b2 = new JButton("Next");
 		b2.addActionListener(this);
 		btnPanel = new JPanel();
 		btnPanel.add(b2);
 
-		f.add(cardPanel, BorderLayout.CENTER);
-		f.add(btnPanel, BorderLayout.SOUTH);
+		f.getContentPane().add(cardPanel, BorderLayout.CENTER);
+		f.getContentPane().add(btnPanel, BorderLayout.SOUTH);
 
 		f.setSize(1000, 1000);
 		f.setVisible(true);
