@@ -18,9 +18,7 @@ public class Floor extends JPanel implements ActionListener, ItemListener {
 	private JCheckBox[] c;
 	int a1,a2,a3;
 	int i = 1;
-	//int block;
-	int point;
-	
+
 	private MainHome mother;
 	
 	JFrame f;
@@ -98,13 +96,10 @@ public class Floor extends JPanel implements ActionListener, ItemListener {
 		cardPanel.add(jp2);
 		cardPanel.add(jp3);
 		cardPanel.add(jp4);
-
-		//b1 = new JButton("1");
+		
 		b2 = new JButton("2");
-		//b1.addActionListener(this);
 		b2.addActionListener(this);
 		btnPanel = new JPanel();
-		//btnPanel.add(b1);
 		btnPanel.add(b2);
 
 		f.add(cardPanel, BorderLayout.CENTER);
@@ -133,13 +128,11 @@ public class Floor extends JPanel implements ActionListener, ItemListener {
 
 	@Override
 	public void itemStateChanged(ItemEvent e) {
-		
-		//block=0;
-		
+	
 		if (c[0].isSelected()) {
 		
 		if(a1==1)	
-		{			point=point+1; JOptionPane.showMessageDialog(null,"CORRECT","",JOptionPane.INFORMATION_MESSAGE);
+		{ JOptionPane.showMessageDialog(null,"CORRECT","",JOptionPane.INFORMATION_MESSAGE);
 }
 		else{
 			 JOptionPane.showMessageDialog(null,"WRONG","",JOptionPane.INFORMATION_MESSAGE);
@@ -150,7 +143,7 @@ public class Floor extends JPanel implements ActionListener, ItemListener {
 
 	if (c[1].isSelected()) {
 		if(a1==2)	
-		{ point=point+1;JOptionPane.showMessageDialog(null,"CORRECT","",JOptionPane.INFORMATION_MESSAGE);}
+		{ JOptionPane.showMessageDialog(null,"CORRECT","",JOptionPane.INFORMATION_MESSAGE);}
 		else{			 JOptionPane.showMessageDialog(null,"WRONG","",JOptionPane.INFORMATION_MESSAGE);
 	
 			b2.setEnabled(false);
@@ -161,7 +154,7 @@ public class Floor extends JPanel implements ActionListener, ItemListener {
 	}
 	if (c[2].isSelected()) {
 		if(a1==3)	
-		{ point=point+1;
+		{
 			JOptionPane.showMessageDialog(null,"CORRECT","",JOptionPane.INFORMATION_MESSAGE);}
 		else{			 JOptionPane.showMessageDialog(null,"WRONG","",JOptionPane.INFORMATION_MESSAGE);
 	
@@ -170,7 +163,7 @@ public class Floor extends JPanel implements ActionListener, ItemListener {
 	}
 	if (c[3].isSelected()) {
 		if(a1==4)	
-		{ point=point+1;
+		{ 
 			JOptionPane.showMessageDialog(null,"CORRECT","",JOptionPane.INFORMATION_MESSAGE);}
 		else{			 JOptionPane.showMessageDialog(null,"WRONG","",JOptionPane.INFORMATION_MESSAGE);
 	
@@ -179,7 +172,7 @@ public class Floor extends JPanel implements ActionListener, ItemListener {
 	}
 	if (c[4].isSelected()) {
 		if(a2==1)	
-		{ point=point+1;
+		{ 
 			JOptionPane.showMessageDialog(null,"CORRECT","",JOptionPane.INFORMATION_MESSAGE);}
 		else{			 JOptionPane.showMessageDialog(null,"WRONG","",JOptionPane.INFORMATION_MESSAGE);
 	
@@ -190,8 +183,8 @@ public class Floor extends JPanel implements ActionListener, ItemListener {
 	}
 	if (c[5].isSelected()) {
 		if(a2==2)	
-			//point=point+1;
-		{point=point+1; JOptionPane.showMessageDialog(null,"CORRECT","",JOptionPane.INFORMATION_MESSAGE);}
+			
+		{ JOptionPane.showMessageDialog(null,"CORRECT","",JOptionPane.INFORMATION_MESSAGE);}
 		else{				 JOptionPane.showMessageDialog(null,"WRONG","",JOptionPane.INFORMATION_MESSAGE);
 
 			b2.setEnabled(false);
@@ -200,7 +193,7 @@ public class Floor extends JPanel implements ActionListener, ItemListener {
 	if (c[6].isSelected()) {
 		if(a2==3)	
 			
-		{ point=point+1;JOptionPane.showMessageDialog(null,"CORRECT","",JOptionPane.INFORMATION_MESSAGE);}
+		{ JOptionPane.showMessageDialog(null,"CORRECT","",JOptionPane.INFORMATION_MESSAGE);}
 		else{			 JOptionPane.showMessageDialog(null,"WRONG","",JOptionPane.INFORMATION_MESSAGE);
 
 			b2.setEnabled(false);
@@ -208,7 +201,7 @@ public class Floor extends JPanel implements ActionListener, ItemListener {
 	}
 	if (c[7].isSelected()) {
 		if(a2==4)	
-		{point=point+1; JOptionPane.showMessageDialog(null,"CORRECT","",JOptionPane.INFORMATION_MESSAGE);}
+		{JOptionPane.showMessageDialog(null,"CORRECT","",JOptionPane.INFORMATION_MESSAGE);}
 		else{			 JOptionPane.showMessageDialog(null,"WRONG","",JOptionPane.INFORMATION_MESSAGE);
 
 			b2.setEnabled(false);
@@ -216,7 +209,7 @@ public class Floor extends JPanel implements ActionListener, ItemListener {
 	}
 	if (c[8].isSelected()) {
 		if(a3==1)	
-		{point=point+1; JOptionPane.showMessageDialog(null,"CORRECT","",JOptionPane.INFORMATION_MESSAGE);
+		{JOptionPane.showMessageDialog(null,"CORRECT","",JOptionPane.INFORMATION_MESSAGE);
 		this.mother.change_button_enable(3, true);
 		f.dispose();}
 		else{			 JOptionPane.showMessageDialog(null,"WRONG","",JOptionPane.INFORMATION_MESSAGE);
@@ -227,7 +220,7 @@ public class Floor extends JPanel implements ActionListener, ItemListener {
 	}
 	if (c[9].isSelected()) {
 		if(a3==2)	
-		{ point=point+1;JOptionPane.showMessageDialog(null,"CORRECT","",JOptionPane.INFORMATION_MESSAGE);
+		{ JOptionPane.showMessageDialog(null,"CORRECT","",JOptionPane.INFORMATION_MESSAGE);
 		this.mother.change_button_enable(3, true);
 		f.dispose();
 		}
@@ -239,7 +232,7 @@ public class Floor extends JPanel implements ActionListener, ItemListener {
 	}
 	if (c[10].isSelected()) {
 		if(a3==3)	
-		{ point=point+1;JOptionPane.showMessageDialog(null,"CORRECT","",JOptionPane.INFORMATION_MESSAGE);
+		{ JOptionPane.showMessageDialog(null,"CORRECT","",JOptionPane.INFORMATION_MESSAGE);
 		this.mother.change_button_enable(3, true);
 		f.dispose();
 		}
@@ -251,7 +244,7 @@ public class Floor extends JPanel implements ActionListener, ItemListener {
 	}
 	if (c[11].isSelected()) {
 		if(a3==4)	
-		{ point=point+1;JOptionPane.showMessageDialog(null,"CORRECT","",JOptionPane.INFORMATION_MESSAGE);
+		{ JOptionPane.showMessageDialog(null,"CORRECT","",JOptionPane.INFORMATION_MESSAGE);
 		this.mother.change_button_enable(3, true);
 		f.dispose();
 		}

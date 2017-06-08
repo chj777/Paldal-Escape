@@ -15,8 +15,8 @@ public class Character {
 	
 		BufferedWriter writer=new BufferedWriter(new FileWriter("MyCharacter.txt",true));
 		
-		writer.append(this.lg.gett1Text()+",");
-		writer.append(this.fl.point+"\n");
+		//writer.append(this.lg.gett1Text()+",");
+		//writer.append(this.fl.point+"\n");
 		
 		writer.close();
 		

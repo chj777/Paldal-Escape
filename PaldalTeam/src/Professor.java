@@ -15,8 +15,6 @@ public class Professor extends People{
 		FileInputStream f=new FileInputStream(fileName);
 		int i=f.read();
 		
-		//"1"=49
-	
 		int n;
 		for(n=0;i!=-1;n++){
 			answer[n]=i-48;
@@ -41,7 +39,7 @@ public class Professor extends People{
 			int i=f.read();
 			while(i!=-1){
 				 i=f.read();
-		//	int n=Integer.parseInt(i)
+	
 				s=s+(char)i+"";
 				 
 				}System.out.println(s);
@@ -56,13 +54,5 @@ public class Professor extends People{
 				}
 			
 	}
-/*	public static void main(String[] args) {
-		Professor p= new Professor();
-		
-		int[] a=new int[1000];
-		a[0]=p.store_ans("p2.txt")[0];
-		System.out.println(a[0]);
-		
-	}
-	*/
+
 }

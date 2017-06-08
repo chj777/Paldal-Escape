@@ -4,8 +4,7 @@ import java.util.ArrayList;
 public class Student extends People{
 
 	
-	/*private String[] name=new String[100];
-	private String[] PW=new String[100];*/
+
 	private ArrayList<String> name=new ArrayList<String>();
 	private ArrayList<String> PW=new ArrayList<String>();
 	public Student(){
@@ -18,12 +17,12 @@ public class Student extends People{
 			String line;
 			
 			while((line=br.readLine())!=null){
-				//s[i]=line;
+			
 				s.add(line);
 				String[] result= s.get(i).split(",");
-				//name[i]=result[0];
+				
 				name.add(i, result[0]);
-				//PW[i]=result[1];
+				
 				PW.add(i, result[1]);
 				i++;
 				
@@ -52,21 +51,6 @@ public class Student extends People{
 		PW = pW;
 	}
 
-	/*public String[] getName() {
-		return name;
-	}
-
-	public void setName(String[] name) {
-		this.name = name;
-	}
-
-	public String[] getPW() {
-		return PW;
-	}
-
-	public void setPW(String[] pW) {
-		PW = pW;
-	}*/
 	@Override
 	public String give(String fileName) {
 		
