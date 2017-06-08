@@ -347,7 +347,7 @@ public class BonusGame extends JFrame {
 					.addContainerGap(40, Short.MAX_VALUE))
 		);
 		p3.setLayout(gl_p3);
-		
+		/// ´Ï³Ä´Ï´¢
 		JPanel p4 = new JPanel();
 		p4.setBackground(new Color(255, 255, 255));
 		contentPane.add(p4, "t4");
