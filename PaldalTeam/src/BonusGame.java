@@ -305,6 +305,7 @@ public class BonusGame extends JFrame {
 				else{
 					/////////////////졌을 때!! 그 1층부터 10층까지 나와야하는곳
 					JOptionPane.showMessageDialog(null, "Wrong!");
+					System.exit(0);
 				}
 			}
 		});
@@ -382,7 +383,9 @@ public class BonusGame extends JFrame {
 				}
 				else{
 					/////////////////졌을 때!! 1층부터 10층까지 나오는 창이 떠야 함...
+					
 					JOptionPane.showMessageDialog(null, "Wrong!");
+					System.exit(0);
 				}
 				
 			}
